@@ -3,11 +3,9 @@ import React from "react";
 import './testList.css';
 import Disease from "../component/diseace/disease";
 import Button from "../component/button/button";
+const webAppUrl='https://venerable-crostata-6cb701.netlify.app';
 
 const diseases= [
-    <form className="mt-4">
-        <button type="submit" className="btn btn-outline-primary btn-lg btn-block">Бронхиальная астма</button>
-    </form>,
     {id: '2', title: 'Пневмония'},
     {id: '3', title: 'Менинговая инфекция '},
     {id: '4', title: 'Нарушение мочеиспускания '},
@@ -17,6 +15,7 @@ const  TestList = (props) => {
 
     return (
         <div  className={'list'}>
+            <a href="/test1" className="button" id="button">Бронхиальная астма</a>
             {diseases.map(item=> (
                 <Disease
                     disease={item}
