@@ -11,7 +11,7 @@ const  Form = () => {
     const {tg} = useT();
 
     //отправка данных с главной кнопки боту
-  /* const onSendData = useCallback(() => {
+   const onSendData = useCallback(() => {
         const data = {
             surname,
             name,
@@ -20,7 +20,7 @@ const  Form = () => {
             email
         }
         tg.sendData(JSON.stringify(data));
-    }, [surname,name,patronymic,age,email])
+    }, [/*surname,name,patronymic,age,email*/])
 
     useEffect(() => {
             tg.onEvent('mainButtonClicked', onSendData())
@@ -28,13 +28,13 @@ const  Form = () => {
                 tg.offEvent('mainButtonClicked', onSendData())
             }
 
-    }, [onSendData])
+    }, [/*onSendData*/])
 
     useEffect(() => {
             tg.MainButton.setParams({
                 text: 'Отправить данные'
             })
-    }, [])*/
+    }, [])
 
     useEffect(() => {
        if (!surname || !name || !patronymic || !email) {
