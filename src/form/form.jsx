@@ -10,7 +10,8 @@ const  Form = () => {
     const [email, setEmail] = useState('');
     const {tg} = useT();
 
-   const onSendData = useCallback(() => {
+    //отправка данных с главной кнопки боту
+  /* const onSendData = useCallback(() => {
         const data = {
             surname,
             name,
@@ -33,7 +34,7 @@ const  Form = () => {
             tg.MainButton.setParams({
                 text: 'Отправить данные'
             })
-    }, [])
+    }, [])*/
 
     useEffect(() => {
        if (!surname || !name || !patronymic || !email) {
