@@ -2,6 +2,7 @@
 import './App.css';
 import {useEffect} from "react";
 import {useT} from "./hooks/useT";
+import Header from "./component/header/header";
 
 
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className="App">
+        <Header />
     <button onClick={onToggleButton}>toggle</button>
     </div>
   );
