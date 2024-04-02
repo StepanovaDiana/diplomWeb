@@ -19,7 +19,7 @@ const  TestList = (props) => {
         <div  className={'list'}>
 
             <a href="#" className="button" id="button">Бронхиальная астма</a>
-            <a href="#" className="button" id="button">Пневмония</a>
+            <a href="/t" className="button" id="button">Пневмония</a>
             <a href="/test1" className="button" id="button">Менинговая инфекция</a>
             <a href="#" className="button" id="button">Нарушение мочеиспускания</a>
         </div>
