@@ -10,7 +10,7 @@ const  Form = (props) => {
     const [email, setEmail] = useState('');
     const {tg} = useT();
 
-    const onSendData = useCallback(() => {
+   /* const onSendData = useCallback(() => {
         const data = {
             surname,
             name,
@@ -21,7 +21,7 @@ const  Form = (props) => {
         tg.sendData(JSON.stringify(data));
     }, [surname,name,patronymic,age,email])
 
-    useEffect(() => {
+    /*useEffect(() => {
             tg.onEvent('mainButtonClicked', onSendData())
             return () => {
                 tg.offEvent('mainButtonClicked', onSendData())
@@ -33,7 +33,7 @@ const  Form = (props) => {
             tg.MainButton.setParams({
                 text: 'Отправить данные'
             })
-    }, [])
+    }, [])*/
 
     useEffect(() => {
        if (!surname || !name || !patronymic || !email) {
