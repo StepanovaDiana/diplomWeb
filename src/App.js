@@ -1,10 +1,12 @@
 
 import './App.css';
 import {useEffect} from "react";
+import {useT} from "./hooks/useT";
 
 
 
 function App() {
+    const {tg, onToggleButton} = useT();
 
     useEffect( () => {
         tg.ready();
@@ -12,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      work
+    <button onClick={onToggleButton}>toggle</button>
     </div>
   );
 }
