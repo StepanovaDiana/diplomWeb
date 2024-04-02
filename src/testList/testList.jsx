@@ -1,30 +1,31 @@
 import React from "react";
+import "inter-ui/inter.css";
 
 import './testList.css';
-import Disease from "../component/diseace/disease";
-import Button from "../component/button/button";
-const webAppUrl='https://venerable-crostata-6cb701.netlify.app';
 
-const diseases= [
-    {id: '2', title: 'Пневмония'},
-    {id: '3', title: 'Менинговая инфекция '},
-    {id: '4', title: 'Нарушение мочеиспускания '},
-]
+
 const  TestList = (props) => {
 
 
-    return (
-        <div  className={'list'}>
-            <a href="/test1" className="button" id="button">Бронхиальная астма</a>
-            {diseases.map(item=> (
-                <Disease
-                    disease={item}
-                   // onAdd={onNext}
-                    className={'item'}
-                />
-            ))}
 
+    return (
+
+       <div className={'test'}>
+
+           <h2 className={'h2'}>Диагностическое тестирование</h2>
+
+           <h3 className={'h3'}>Выберите предположительно вашу болезнь, для проверки симптомов:</h3>
+
+        <div  className={'list'}>
+
+            <a href="#" className="button" id="button">Бронхиальная астма</a>
+            <a href="/t" className="button" id="button">Пневмония</a>
+            <a href="/test1" className="button" id="button">Менинговая инфекция</a>
+            <a href="#" className="button" id="button">Нарушение мочеиспускания</a>
         </div>
+       </div>
+
+
     );
 
 }

@@ -1,8 +1,14 @@
 .button{
     padding: 10px 15px;
-    background: var(--tg-theme-button-color);
-    color: var(--tg-theme-button-text-color);
+    border-radius: 500px;
+    background: #D9D9D9;
+    color:  #FFFFFF;
+    font-size: 16px;
     border: none;
     outline: none;
     cursor: pointer;
 }
+
+
+
+
