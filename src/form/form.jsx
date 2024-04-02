@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import './form.css';
 import {useT} from "../hooks/useT";
 const  Form = (props) => {
@@ -9,6 +9,25 @@ const  Form = (props) => {
     const [age, setAge] = useState('adult');
     const [email, setEmail] = useState('');
     const {tg} = useT();
+
+    const onSendData = useCallback(() => {
+        const data = {
+            surname,
+            name,
+            patronymic,
+            age,
+            email
+        }
+        tg.sendData(JSON.stringify(data));
+    }, [])
+
+    useEffect(() => {
+            tg.onEvent('mainButtonClicked', onSendData())
+            return () => {
+                tg.offEvent('mainButtonClicked', onSendData())
+            }
+
+    }, [])
 
     useEffect(() => {
             tg.MainButton.setParams({
