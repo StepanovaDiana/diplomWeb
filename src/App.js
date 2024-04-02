@@ -9,7 +9,7 @@ import Form from "./form/form";
 
 
 function App() {
-    const {tg, onToggleButton} = useT();
+    const {tg} = useT();
 
     useEffect( () => {
         tg.ready();
@@ -19,8 +19,8 @@ function App() {
     <div className="App">
         <Header />
         <Routes>
-            <Route index element = {<TestList/>}/>
-            <Route path={'form'} element = {<Form/>}/>
+            <Route index element = {<TestList />}/>
+            <Route path={'form'} element = {<Form />}/>
         </Routes>
 
     </div>
