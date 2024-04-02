@@ -5,7 +5,7 @@ const Disease = ({disease,className, onAdd}) => {
     const onAddHandler = () => {// в будущем будет переходить на новую страницу
         onAdd(disease);
     }
-    return (
+  /*  return (
         <div className={'disease' + className}>
             <div className={'title'}>{disease.title}</div>
             <Button className={'add-bth'} onClick={onAddHandler}>
@@ -13,7 +13,7 @@ const Disease = ({disease,className, onAdd}) => {
             </Button>//создать другой вид кнопки для нажатия
 
         </div>
-    );
+    );*/
 };
 
 export default Disease;

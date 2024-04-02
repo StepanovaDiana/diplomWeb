@@ -5,7 +5,9 @@ import Disease from "../component/diseace/disease";
 import Button from "../component/button/button";
 
 const diseases= [
-    {id: '1', title: 'Бронхиальная астма'},
+    <form className="mt-4">
+        <button type="submit" className="btn btn-outline-primary btn-lg btn-block">Бронхиальная астма</button>
+    </form>,
     {id: '2', title: 'Пневмония'},
     {id: '3', title: 'Менинговая инфекция '},
     {id: '4', title: 'Нарушение мочеиспускания '},

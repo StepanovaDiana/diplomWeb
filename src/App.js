@@ -6,6 +6,7 @@ import Header from "./component/header/header";
 import {Route, Routes} from "react-router-dom";
 import TestList from "./testList/testList";
 import Form from "./form/form";
+import MeningocalInfection from "./component/meningocalInfection/meningocalInfection";
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Routes>
             <Route index element = {<TestList />}/>
             <Route path={'form'} element = {<Form />}/>
+            <Route path={'test1'} element = {<MeningocalInfection />}/>
+
         </Routes>
 
     </div>
