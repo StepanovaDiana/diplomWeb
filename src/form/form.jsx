@@ -19,7 +19,7 @@ const  Form = (props) => {
             email
         }
         tg.sendData(JSON.stringify(data));
-    }, [])
+    }, [surname,name,patronymic,age,email])
 
     useEffect(() => {
             tg.onEvent('mainButtonClicked', onSendData())
@@ -27,7 +27,7 @@ const  Form = (props) => {
                 tg.offEvent('mainButtonClicked', onSendData())
             }
 
-    }, [])
+    }, [onSendData])
 
     useEffect(() => {
             tg.MainButton.setParams({
